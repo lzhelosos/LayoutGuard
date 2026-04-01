@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <RootNamespace>Punto</RootNamespace>
+    <AssemblyName>LayoutGuard</AssemblyName>
+    <ApplicationIcon>Assets\app.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Положите сюда tray-ru.ico и tray-en.ico; при отсутствии файлов сборка всё равно пройдёт -->
+    <None Include="Assets\*.ico" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+</Project>
